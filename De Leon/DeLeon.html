@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url('images/35ffebe8-7cc0-4b2c-9bea-d87585cc2266.png'); 
+            background-size: cover;           
+            background-repeat: no-repeat; 
+            background-position: center; 
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        video {
+            border: 5px solid #fff;      
+            border-radius: 12px;         
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3); 
+        }
+        article {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 8px #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-content">
+        <article>
+            vlog
+        </article>
+        <video width="640" height="360" controls>
+            <source src="vids/vlog.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="center-content">
+        <article>
+            Fav song
+        </article>
+        <video width="640" height="360" controls>
+            <source src="vids/rex.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>
