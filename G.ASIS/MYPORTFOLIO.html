@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Mini Portfolio — Video Background</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="mlbb.mp4" type="video/mp4">
+   
+  </video>
+
+
+  <article class="content">
+    <h1>My Portfolio</h1>
+    <p class="lead">Welcome to my HTML5 PROJECT</p>
+
+    <h2>My Skills Progress</h2>
+    <div class="skill">
+      <label>HTML5 Learning Progress</label>
+      <div class="progress"><span style="width:80%"></span></div>
+    </div>
+    <div class="skill">
+      <label>CSS Learning Progress</label>
+      <div class="progress"><span style="width:70%"></span></div>
+    </div>
+    <div class="skill">
+      <label>JavaScript Learning Progress</label>
+      <div class="progress"><span style="width:40%"></span></div>
+    </div>
+
+    <h2>Search Example</h2>
+    <input placeholder="Choose or type a tool" list="tools" />
+    <datalist id="tools">
+      <option>VS Code</option>
+      <option>Chrome DevTools</option>
+      <option>Figma</option>
+      <option>CodePen</option>
+    </datalist>
+
+    <h2>Contact Me</h2>
+    <input placeholder="Enter your name"><br>
+    <input placeholder="example@example.com"><br>
+    <input placeholder="555-555-1211"><br>
+    <textarea placeholder="Write something..."></textarea><br>
+    <button>Send</button>
+  </article>
+</section>
+
+</body>
+</html>
