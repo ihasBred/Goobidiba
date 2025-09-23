@@ -1,0 +1,233 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #fbfcf9;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fbfcf9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 9999;
+}
+
+#preloader video {
+    height: 80vh;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    background: #fff;
+}
+
+#preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+
+nav h1 {
+    cursor: default;
+}
+
+nav h1:hover {
+    letter-spacing: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+nav a:hover {
+    letter-spacing: 3px;
+}
+
+.overlay-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 2rem; /* Replace margin: auto 2rem; */
+}
+
+.overlay {
+    display: flex;
+    gap: 3rem;
+}
+
+.overview {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    width: 250px;
+    text-align: left;
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+
+.overview p {
+    font-weight: bold;
+}
+
+.info p {
+    margin: 0.5rem 0;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.show div {
+    background: rgba(0,0,0,0.5);
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.show div img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.show div progress {
+    width: 100%;
+    height: 20px;
+    margin: 0.5rem 0 1rem 0;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.show div progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 12px;
+}
+
+.show div progress.html::-webkit-progress-value {
+    background-color: #e44d26;
+    border-radius: 12px;
+}
+
+.show div progress.css::-webkit-progress-value {
+    background-color: #264de4;
+    border-radius: 12px;
+}
+
+.show div progress.js::-webkit-progress-value {
+    background-color: #f0db4f;
+    border-radius: 12px;
+}
+
+.show div progress::-moz-progress-bar.html {
+    background-color: #e44d26;
+    border-radius: 12px;
+}
+
+.show div progress::-moz-progress-bar.css {
+    background-color: #264de4;
+    border-radius: 12px;
+}
+
+.show div progress::-moz-progress-bar.js {
+    background-color: #f0db4f;
+    border-radius: 12px;
+}
+
+footer.list {
+    background: #222;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 91px;
+    text-align: center;
+}
+
+footer.list ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+footer.list img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+footer.list img:hover {
+    transform: scale(1.1);
+    border-color: #00f;
+}
+
+.bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9) {
+    .bg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9) {
+    .bg {
+        width: 100%;
+        height: auto;
+    }
+}

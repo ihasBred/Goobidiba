@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bau Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../assets/mococoeh.png">
+</head>
+<body>
+    <div id="preloader">
+        <video autoplay muted playsinline loop disablePictureInPicture oncontextmenu="return false;" id="preloadVideo">
+            <source src="../assets/gmurin.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="content">
+        <nav>
+            <span class="nav-title">FORMS</span>
+            <p><a href="../Project.html" class="nav-back"><</a></p>
+        </nav>
+
+        <div class="form">
+            <div class="form-bg">
+                <video plays-inline muted loop autoplay>
+                    <source src="../assets/agadoo.mp4">
+                </video>
+            </div>
+
+            <div class="form-side">
+                <div class="search">
+                    <h2>Preference Form</h2>
+                    <label for="tool">Mostly Used WebTool:</label>
+                    <input id="tool" type="text" list="webTools" placeholder="Choose a Tool.">
+                    <datalist id="webTools">
+                        <option value="Angular"></option>
+                        <option value="Atom"></option>
+                        <option value="Bootstrap"></option>
+                        <option value="Django"></option>
+                        <option value="GitHub"></option>
+                        <option value="Notepad++"></option>
+                        <option value="Npm"></option>
+                        <option value="Postman"></option>
+                        <option value="Visual Studio Code"></option>
+                        <option value="Vue.js"></option>
+                    </datalist>
+                </div>
+
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <form autocomplete="on">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name." required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                        <label for="port">Portfolio Website:</label>
+                        <input type="url" id="port" name="port" placeholder="https://example.com">
+                        <label for="num">Phone Number:</label>
+                        <input type="tel" id="num" name="num" placeholder="123-456-7890">
+                        <label for="msg">Message:</label>
+                        <textarea name="msg" id="msg" placeholder="Enter your Message..."></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
