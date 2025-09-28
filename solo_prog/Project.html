@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bau Progress</title>
+    <link rel="stylesheet" href="assets/required/style.css">
+    <link rel="icon" href="#">
+</head>
+<body>
+    <div class="profile">
+        <video loop autoplay muted playsinline>
+            <source src="assets/gmurin.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="preloader">
+        <div class="loader-circle">
+            <video autoplay muted loop playsinline>
+            <source src="assets/gmurin.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="loader-text">Loading...</p>
+    </div>
+
+    <div class="nav"></div>
+
+    <div class="overlay">
+        <div class="prog">
+            <h2>MY LEARNING PROGRESS</h2>
+            <div class="prog-item">
+                <progress value="49" max="100"></progress>
+                <span class="prog-label">HTML5 – 49%</span>
+            </div>
+            <div class="prog-item">
+                <progress value="34" max="100"></progress>
+                <span class="prog-label">CSS – 34%</span>
+            </div>
+            <div class="prog-item">
+                <progress value="11" max="100"></progress>
+                <span class="prog-label">JS – 11%</span>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form-inp">
+                <div class="pref">
+                    <h2>Preference Form</h2>
+                    <label for="tool">Mostly Used WebTool:</label>
+                    <input id="tool" type="text" list="webTools" placeholder="Choose a Tool.">
+                    <datalist id="webTools">
+                        <option value="Angular"></option>
+                        <option value="Atom"></option>
+                        <option value="Bootstrap"></option>
+                        <option value="Django"></option>
+                        <option value="GitHub"></option>
+                        <option value="Notepad++"></option>
+                        <option value="Npm"></option>
+                        <option value="Postman"></option>
+                        <option value="Visual Studio Code"></option>
+                        <option value="Vue.js"></option>
+                    </datalist>
+                </div>
+                <div class="msg">
+                    <h2>Contact Us</h2>
+                    <form autocomplete="on">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name." required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                        <label for="port">Portfolio Website:</label>
+                        <input type="url" id="port" name="port" placeholder="https://example.com">
+                        <label for="num">Phone Number:</label>
+                        <input type="tel" id="num" name="num" placeholder="123-456-7890">
+                        <label for="msg">Message:</label>
+                        <textarea name="msg" id="msg" placeholder="Enter your Message..."></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.getElementById("preloader").classList.add("hidden");
+        }, 2500); // 2.5 seconds
+    });
+    </script>
+</body>
+</html>
