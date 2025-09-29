@@ -80,12 +80,13 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    padding: 0 2rem; /* Replace margin: auto 2rem; */
+    padding: 0 2rem;
 }
 
 .overlay {
     display: flex;
     gap: 3rem;
+    margin-top: 210px;
 }
 
 .overview {
@@ -97,7 +98,6 @@ nav a:hover {
     width: 250px;
     text-align: left;
     font-size: 1.1rem;
-    margin-top: 100px;
 }
 
 .overview p {
@@ -113,7 +113,7 @@ nav a:hover {
     flex-direction: column;
     gap: 1.5rem;
     flex-wrap: wrap;
-    margin-top: 100px;
+
 }
 
 .show div {
@@ -181,8 +181,8 @@ footer.list {
     background: #222;
     padding: 1rem 0;
     width: 100%;
-    margin-top: 190px;
     text-align: center;
+    margin-top: 290px;
 }
 
 footer.list ul {
