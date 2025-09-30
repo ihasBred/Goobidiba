@@ -80,7 +80,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    padding: 0 2rem; /* Replace margin: auto 2rem; */
+    padding: 0 2rem;
 }
 
 .overlay {
@@ -181,7 +181,7 @@ footer.list {
     background: #222;
     padding: 1rem 0;
     width: 100%;
-    margin-top: 190px;
+    margin-top: 170px;
     text-align: center;
 }
 
